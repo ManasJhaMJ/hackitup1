@@ -250,7 +250,7 @@ button {
     }
 
     h1 {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         font-size: 3rem;
     }
 
@@ -280,7 +280,7 @@ button {
         /* Modify button styles for mobile screens */
         padding: 8px 16px;
         font-size: 0.9rem;
-        margin-top: 5px;
+        margin-top: 1rem;
     }
 
 
