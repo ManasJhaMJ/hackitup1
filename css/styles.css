@@ -18,9 +18,14 @@ html {
 
 body {
     background-color: #0a0626;
+    background: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 100%;
     width: 100%;
-    color: #fff;
+    color: snow;
     margin: none;
     padding: none;
     box-sizing: border-box;
@@ -31,11 +36,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 13vh;
-    padding: 10px 20px;
-    margin: 20px 40px;
+    min-height: auto;
+    padding: 20px 20px;
     background-color: transparent;
-    border-radius: 100px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -46,7 +49,7 @@ a {
 
 h1 {
     font-family: ironcobra;
-    font-size: 10rem;
+    font-size: 7rem;
     text-align: center;
     margin-top: 4rem;
     background-clip: text;
@@ -83,6 +86,7 @@ h3 {
     border-radius: 10px;
     display: block;
     margin: 0 10px;
+    border: #fff 2px solid;
 }
 
 .organiser {
@@ -143,7 +147,7 @@ button {
 }
 
 .cloud1 {
-    bottom: 15%;
+    bottom: 20%;
     width: 300px;
     height: auto;
     animation: left-right 40s linear infinite;
@@ -162,7 +166,7 @@ button {
 }
 
 .cloud2 {
-    top: 20%;
+    top: 18%;
     width: 300px;
     height: auto;
     animation: right-left 40s linear infinite;
@@ -203,7 +207,7 @@ button {
 .para {
     width: auto;
     height: 300px;
-    left: 10px;
+    left: 10%;
     top: -350px;
     animation: top-down 15s linear infinite;
 }
@@ -216,5 +220,85 @@ button {
 
     100% {
         top: 110%;
+    }
+}
+
+/* Add styles for mobile screens */
+@media (max-width: 768px) {
+
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 70px;
+        border: #2a15b1 1px solid;
+    }
+
+    .organiser {
+        justify-content: center;
+    }
+
+    .organiser img {
+        width: 100px;
+    }
+
+    .text {
+        margin: 0 10vw;
+    }
+
+    h1 {
+        margin-top: 1.5rem;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .time {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #days,
+    #hours,
+    #mins,
+    #secs {
+        font-size: 1.2rem;
+    }
+
+    button {
+        /* Modify button styles for mobile screens */
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+
+    .cloud1,
+    .cloud2 {
+        /* Modify animation styles for mobile screens */
+        display: none;
+    }
+
+    .para {
+        top: 10%;
+        opacity: 0.4;
+        animation: plane 5s linear infinite;
+    }
+
+    .plane {
+        opacity: 0.4;
+        top: unset;
+        bottom: 10%;
+        animation-duration: 3s;
     }
 }
