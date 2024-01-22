@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ironcobra;
+    src: url(../iron-cobra/ironcobra.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    background-color: #0a0626;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 13vh;
+    padding: 10px 20px;
+    margin: 20px 40px;
+    background-color: transparent;
+    border-radius: 100px;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: ironcobra;
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 4rem;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(255, 211, 25), rgb(255, 144, 31), rgb(255, 41, 117), rgb(242, 34, 255), rgb(140, 30, 255))
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    background-clip: text;
+    color: inherit;
+    /* background-image: linear-gradient(to right, #92fdfe, #002661); */
+    /* background-image: linear-gradient(to right, #200E3A, #38419D, #3887BE, #52D3D8) */
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    background-clip: text;
+    color: inherit;
+    margin-top: 2rem;
+    /* background-image: linear-gradient(to right, #92fdfe, #002661); */
+    /* background-image: linear-gradient(to right, #200E3A, #38419D, #3887BE, #52D3D8) */
+
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 10px;
+}
+
+.organiser {
+    display: flex;
+}
+
+.organiser img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 10px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: calc(100vh - 30vh); */
+    margin: 0 320px;
+}
+
+.time {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#days,
+#hours,
+#mins,
+#secs {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    background-clip: text;
+    color: inherit;
+    margin-top: 2rem;
+    /* background-image: linear-gradient(to right, #92fdfe, #002661); */
+    /* background-image: linear-gradient(to right, #200E3A, #38419D, #3887BE, #52D3D8) */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #27323e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.abs-img {
+    z-index: -1;
+    position: absolute;
+}
+
+.cloud1 {
+    bottom: 15%;
+    width: 300px;
+    height: auto;
+    animation: left-right 40s linear infinite;
+}
+
+@keyframes left-right {
+
+    0%,
+    100% {
+        left: -200px;
+    }
+
+    50% {
+        left: 100%;
+    }
+}
+
+.cloud2 {
+    top: 20%;
+    width: 300px;
+    height: auto;
+    animation: right-left 40s linear infinite;
+}
+
+@keyframes right-left {
+
+    0%,
+    100% {
+        right: -200px;
+    }
+
+    50% {
+        right: 100%;
+    }
+}
+
+.plane {
+    width: 300px;
+    height: auto;
+    top: 40%;
+    right: 3%;
+    animation: plane 2s linear infinite;
+}
+
+@keyframes plane {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10px, 20px);
+    }
+}
+
+.para {
+    width: auto;
+    height: 300px;
+    left: 10px;
+    top: -350px;
+    animation: top-down 15s linear infinite;
+}
+
+@keyframes top-down {
+
+    0% {
+        top: -350px;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
