@@ -264,7 +264,7 @@ button {
     }
 
     .time {
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
     }
@@ -273,7 +273,7 @@ button {
     #hours,
     #mins,
     #secs {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     button {
