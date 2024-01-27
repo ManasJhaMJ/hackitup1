@@ -86,7 +86,7 @@ h3 {
     border-radius: 10px;
     display: block;
     margin: 0 10px;
-    border: #fff 2px solid;
+    border: #2a15b1 1px solid;
 }
 
 .organiser {
@@ -262,7 +262,6 @@ button img {
 
     .logo img {
         width: 70px;
-        border: #2a15b1 1px solid;
     }
 
     .organiser {
@@ -283,7 +282,7 @@ button img {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h3 {
